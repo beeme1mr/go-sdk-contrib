@@ -43,7 +43,7 @@ type storedSpan struct {
 	span   trace.Span
 }
 
-// NewHook return a reference to a new instance of the OpenTelemetry Hook!
+// NewHook return a reference to a new instance of the OpenTelemetry Hook
 func NewHook() *Hook {
 	return &Hook{
 		tracerClient: &tracerClient{},
