@@ -4,7 +4,7 @@
   "packages": {
     "hooks/open-telemetry": {
       "release-type": "go",
-      "package-name": "OpenTelemetry Hook",
+      "package-name": "hooks/open-telemetry",
       "prerelease": true,
       "bump-minor-pre-major": true,
       "bump-patch-for-minor-pre-major": true,
@@ -13,7 +13,7 @@
     },
     "hooks/validator": {
       "release-type": "go",
-      "package-name": "validator Hook",
+      "package-name": "hooks/validator",
       "prerelease": true,
       "bump-minor-pre-major": true,
       "bump-patch-for-minor-pre-major": true,
@@ -22,7 +22,7 @@
     },
     "providers/flagd": {
       "release-type": "go",
-      "package-name": "Flagd Provider",
+      "package-name": "providers/flagd",
       "prerelease": true,
       "bump-minor-pre-major": true,
       "bump-patch-for-minor-pre-major": true,
@@ -31,7 +31,7 @@
     },
     "providers/from-env": {
       "release-type": "go",
-      "package-name": "From Env Provider",
+      "package-name": "providers/from-env",
       "prerelease": true,
       "bump-minor-pre-major": true,
       "bump-patch-for-minor-pre-major": true,
@@ -40,7 +40,7 @@
     },
     "providers/go-feature-flag": {
       "release-type": "go",
-      "package-name": "Go Feature Flag Provider",
+      "package-name": "providers/go-feature-flag",
       "prerelease": true,
       "bump-minor-pre-major": true,
       "bump-patch-for-minor-pre-major": true,
