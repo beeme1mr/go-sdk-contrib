@@ -1,5 +1,6 @@
 package flagd
 
+// Caches are useful
 type Cache[K comparable, V any] interface {
 	Add(K, V) (evicted bool)
 	Purge()
