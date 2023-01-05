@@ -3,7 +3,15 @@ MODULE_TYPE ?= provider
 
 workspace-init:
 	go work init
-	@@ -14,10 +15,16 @@ lint:
+	$(foreach module, $(ALL_GO_MOD_DIRS), go work use $(module);)
+
+workspace-update:
+	$(foreach module, $(ALL_GO_MOD_DIRS), go work use $(module);)
+
+test:
+	go list -f '{{.Dir}}/...' -m | xargs -I{} go test -v {}
+
+lint: 
 	go install -v github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 	$(foreach module, $(ALL_GO_MOD_DIRS), ${GOPATH}/bin/golangci-lint run --deadline=3m --timeout=3m $(module)/...;)
 
