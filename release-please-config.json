@@ -1,5 +1,6 @@
 {
   "bootstrap-sha": "4d6cb816ed912084c598767636324aa9a2866bdd",
+  "monorepo-tags": true,
   "packages": {
     "hooks/open-telemetry": {
       "release-type": "go",
